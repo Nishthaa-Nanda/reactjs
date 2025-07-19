@@ -16,7 +16,7 @@ function App() {
     <>
     <div className="App">
      <Video  verified={true} channel='coder help'title='tutorial' views='88K' time ='2 years'></Video>
-     <Video>{...obj}</Video>
+     <Video{...obj}/>
      </div>
     </>
   );

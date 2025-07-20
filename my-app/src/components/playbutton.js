@@ -1,12 +1,16 @@
 
-import React from 'react'
+import React, { useState } from 'react'
 
-export default function Playbutton({message,children,onClick}) {
-    function handleClick(){
-     onClick();
+export default function Playbutton({message,children,onPlay,onPause}) {
+   const[playing,setPlaying]=useState(false);
+    function handleClick(e){
+    e.stopPropagation();
+    if(playing) onPause()
+    else onPlay();
+    setPlaying(!playing);
     }
   return (
-    <button onClick={handleClick}>{children}</button>
+    <button onClick={handleClick}>{playing?'play':'pause'}</button>
   )
 }
   

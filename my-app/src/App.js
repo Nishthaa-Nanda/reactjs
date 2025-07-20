@@ -20,8 +20,8 @@ function App() {
      <Video  verified={true} channel='coder help'title='tutorial' views='88K' time ='2 years'></Video>
      <Video{...obj}/>
      </div>
-     <Playbutton message="play-msg" onClick={()=>console.log('playy')}>Play</Playbutton>
-     <Playbutton message="pause-msg" onClick={()=>console.log('Pause')}>Pause</Playbutton>
+     <Playbutton message="play-msg" onPlay={()=>console.log('playy')} onPause={()=>console.log('pause')}>Play</Playbutton>
+     
     </>
     
   );

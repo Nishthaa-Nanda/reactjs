@@ -2,6 +2,8 @@
 import { version } from 'react';
 import './App.css';
 import Video  from './videos';
+import playbutton from './components/playbutton';
+import Playbutton from './components/playbutton';
 
 
 function App() { 
@@ -18,7 +20,10 @@ function App() {
      <Video  verified={true} channel='coder help'title='tutorial' views='88K' time ='2 years'></Video>
      <Video{...obj}/>
      </div>
+     <Playbutton message="play-msg" onClick={()=>console.log('playy')}>Play</Playbutton>
+     <Playbutton message="pause-msg" onClick={()=>console.log('Pause')}>Pause</Playbutton>
     </>
+    
   );
 }
 

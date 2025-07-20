@@ -1,5 +1,5 @@
 
-function Video({channel,title,views,time,verified}){
+function Video({verified,channel,title,views,time}){
    return(
       <>
       <div>Video</div>

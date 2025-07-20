@@ -3,6 +3,7 @@ import { version } from 'react';
 import './App.css';
 import Video  from './videos';
 import playbutton from './components/playbutton';
+import Counter from './components/counter';
 import Playbutton from './components/playbutton';
 
 
@@ -22,6 +23,7 @@ function App() {
      </div>
      <Playbutton message="play-msg" onClick={()=>console.log('playy')}>Play</Playbutton>
      <Playbutton message="pause-msg" onClick={()=>console.log('Pause')}>Pause</Playbutton>
+     <Counter></Counter>
     </>
     
   );

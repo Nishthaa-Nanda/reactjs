@@ -2,7 +2,8 @@
 import React from 'react'
 
 export default function Playbutton({message,children,onClick}) {
-    function handleClick(){
+    function handleClick(e){
+     e.stoPropagation();
      onClick();
     }
   return (
